@@ -4,7 +4,7 @@ import { View, Text, Image, Pressable, StyleSheet } from 'react-native';
 const WelcomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Image source={require('../assets/logo.jpg')} style={styles.logo} />
+      <Image source={require('../assets/logo.png')} style={styles.logo} />
       <Text style={styles.title}>Welcome to Little Lemon</Text>
       <Pressable 
         style={styles.button} 
@@ -24,9 +24,10 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   logo: {
-    width: 150,
+    width: 300,
     height: 150,
     marginBottom: 20,
+    resizeMode: 'contain',
   },
   title: {
     fontSize: 24,

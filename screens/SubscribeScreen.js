@@ -123,7 +123,7 @@ const SubscribeScreen = () => {
     <View style={styles.container}>
       {/* Little Lemon Logo */}
       <Image
-        source={require('../assets/logo.jpg')} // Adjust path
+        source={require('../assets/logo.png')} // Adjust path
         style={styles.logo}
       />
 
@@ -160,9 +160,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   logo: {
-    width: 100,
-    height: 100,
+    width: 300,
+    height: 150,
     marginBottom: 20,
+    resizeMode: 'contain',
   },
   title: {
     fontSize: 20,
